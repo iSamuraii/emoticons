@@ -14,19 +14,23 @@ namespace Isamuraii\Emoticons;
 use Flarum\Extend;
 use s9e\TextFormatter\Configurator;
 
-$emoticons= ['sisi', 'asd', 'look', 'rotfl'];
-
 return [
   (new Extend\Frontend('forum'))
     ->css(__DIR__.'/less/forum.less'),
 
   (new Extend\Formatter())
     ->configure(function (Configurator $configurator) {
-      foreach($emoticons as $key => $value) {
-        $configurator->Emoticons->add(
-          ":${value}:",
-          "<img class=\"emoticon\" src=\"https://cdn.off-popic.it/emoticons/${value}.gif\" alt=\"${value}\">"
-        );
-      }
+      $configurator->Emoticons->add(
+        ':sisi:', '<img class="emoticon" src="https://cdn.off-popic.it/emoticons/sisi.gif" alt=":sisi:" title="sisi">'
+      );
+      $configurator->Emoticons->add(
+        ':asd:', '<img class="emoticon" src="https://cdn.off-popic.it/emoticons/asd.gif" alt=":asd:" title="asd">'
+      );
+      $configurator->Emoticons->add(
+        ':look:', '<img class="emoticon" src="https://cdn.off-popic.it/emoticons/look.gif" alt=":look:" title="look">'
+      );
+      $configurator->Emoticons->add(
+        ':rotfl:', '<img class="emoticon" src="https://cdn.off-popic.it/emoticons/rotfl.gif" alt=":rotfl:" title="rotfl">'
+      );
     }),
 ];
