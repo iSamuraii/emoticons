@@ -1,0 +1,31 @@
+{
+  "name": "isamuraii/emoticons",
+  "description": "Dirty hack to insert some emoticons",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+  "authors": [],
+  "autoload": {
+    "psr-4": {
+      "Isamuraii\\Emoticons\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Emoticons",
+      "icon": {
+        "name": "",
+        "backgroundColor": "",
+        "color": ""
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
