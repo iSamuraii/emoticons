@@ -23,10 +23,10 @@ return [
   (new Extend\Formatter())
     ->configure(function (Configurator $configurator) {
       foreach($emoticons as $key => $value) {
-      $configurator->Emoticons->add(
-        ':${value}:',
-        '<img class="emoticon" src="https://cdn.off-popic.it/emoticons/${value}.gif" alt="${value}">'
-      );
+        $configurator->Emoticons->add(
+          ":${value}:",
+          "<img class=\"emoticon\" src=\"https://cdn.off-popic.it/emoticons/${value}.gif\" alt=\"${value}\">"
+        );
       }
     }),
 ];
