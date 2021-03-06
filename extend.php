@@ -11,6 +11,9 @@
 
 namespace Isamuraii\Emoticons;
 
+use Flarum\Extend;
+use s9e\TextFormatter\Configurator;
+
 return [
   (new Extend\Formatter())
    ->configure(function (Configurator $configurator) {
