@@ -106,6 +106,6 @@ return [
       );
     }
     $configurator->Emoticons->add(":test:", "Hello world");
-    $configurator->Emoticons->add(":debug:", $emoticons.join(";"));
+    $configurator->Emoticons->add(":debug:", join(";", $emoticons));
   })
 ];
