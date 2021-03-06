@@ -99,10 +99,10 @@ return [
        "yeee",
        "zizi"
     ];
-    for($i = 0; $i < $emoticons.length; $i+=1) {
+    for($i = 0; $i < count($emoticons); $i+=1) {
       $configurator->Emoticons->add(
-        ":#{$emoticons[$i]}:",
-        "<img class=\"emoticon\" src=\"https://cdn.off-popic.it/$emoticons/#{$emoticons[$i]}.gif\" alt=\":#{$emoticons[$i]}:\" title=\":#{$emoticons[$i]}\">"
+        ":{$emoticons[$i]}:",
+        "<img class=\"emoticon\" src=\"https://cdn.off-popic.it/emoticons/{$emoticons[$i]}.gif\" alt=\":{$emoticons[$i]}:\" title=\":{$emoticons[$i]}\">"
       );
     }
     $configurator->Emoticons->add(":test:", "Hello world");
